@@ -48,7 +48,6 @@
 
 - group: v0.x
   baseurl: "/docs"
-  description: "Current major release. Last update was v0.2.0."
+  description: "Current major release. Last update was v0.1.0."
   versions:
-    - v: "0.2"
     - v: "0.1"
