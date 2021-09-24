@@ -61,21 +61,21 @@
 
 {{ if eq (hugo.Environment) "development" -}}
   {{ if .Site.Params.options.bootStrapJs -}}
-    <script src="{{ $bs.RelPermalink }}" defer></script>
+    <script src="{{ $bs.Permalink | relURL }}" defer></script>
   {{ end -}}
   {{ if .Site.Params.options.highLight -}}
-    <script src="{{ $highlight.RelPermalink }}" defer></script>
+    <script src="{{ $highlight.Permalink | relURL }}" defer></script>
   {{ end -}}
   {{ if .Site.Params.options.kaTex -}}
-    <script src="{{ $katex.RelPermalink }}" defer></script>
-    <script src="{{ $katexAutoRender.RelPermalink }}" onload="renderMathInElement(document.body);" defer></script>
+    <script src="{{ $katex.Permalink | relURL }}" defer></script>
+    <script src="{{ $katexAutoRender.Permalink | relURL }}" onload="renderMathInElement(document.body);" defer></script>
   {{ end -}}
-  <script src="{{ $js.RelPermalink }}" defer></script>
+  <script src="{{ $js.Permalink | relURL }}" defer></script>
   {{ with .Params.mermaid -}}
-    <script src="{{ $mermaid.RelPermalink }}" defer></script>
+    <script src="{{ $mermaid.Permalink | relURL }}" defer></script>
   {{ end -}}
   {{ if and (.Site.Params.options.flexSearch) (eq .Section "docs") -}}
-    <script src="{{ $index.RelPermalink }}" defer></script>
+    <script src="{{ $index.Permalink | relURL }}" defer></script>
   {{ end -}}
 {{ else -}}
   {{ $js := $js | minify | fingerprint "sha512" -}}
@@ -86,20 +86,20 @@
   {{ $katexAutoRender := $katexAutoRender | minify | fingerprint "sha512" -}}
   {{ $mermaid := $mermaid | minify | fingerprint "sha512" -}}
   {{ if .Site.Params.options.bootStrapJs -}}
-    <script src="{{ $bs.RelPermalink }}" integrity="{{ $bs.Data.Integrity }}" crossorigin="anonymous" defer></script>
+    <script src="{{ $bs.Permalink | relURL }}" integrity="{{ $bs.Data.Integrity }}" crossorigin="anonymous" defer></script>
   {{ end -}}
   {{ if .Site.Params.options.highLight -}}
-    <script src="{{ $highlight.RelPermalink }}" integrity="{{ $highlight.Data.Integrity }}" crossorigin="anonymous" defer></script>
+    <script src="{{ $highlight.Permalink | relURL }}" integrity="{{ $highlight.Data.Integrity }}" crossorigin="anonymous" defer></script>
   {{ end -}}
   {{ if .Site.Params.options.kaTex -}}
-    <script src="{{ $katex.RelPermalink }}" integrity="{{ $katex.Data.Integrity }}" crossorigin="anonymous" defer></script>
-    <script src="{{ $katexAutoRender.RelPermalink }}" integrity="{{ $katexAutoRender.Data.Integrity }}" crossorigin="anonymous" defer></script>
+    <script src="{{ $katex.Permalink | relURL }}" integrity="{{ $katex.Data.Integrity }}" crossorigin="anonymous" defer></script>
+    <script src="{{ $katexAutoRender.Permalink | relURL }}" integrity="{{ $katexAutoRender.Data.Integrity }}" crossorigin="anonymous" defer></script>
   {{ end -}}
-  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
+  <script src="{{ $js.Permalink | relURL }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
   {{ with .Params.mermaid -}}
-    <script src="{{ $mermaid.RelPermalink }}" integrity="{{ $mermaid.Data.Integrity }}" crossorigin="anonymous" defer></script>
+    <script src="{{ $mermaid.Permalink | relURL }}" integrity="{{ $mermaid.Data.Integrity }}" crossorigin="anonymous" defer></script>
   {{ end -}}
   {{ if and (.Site.Params.options.flexSearch) (eq .Section "docs") -}}
-    <script src="{{ $index.RelPermalink }}" integrity="{{ $index.Data.Integrity }}" crossorigin="anonymous" defer></script>
+    <script src="{{ $index.Permalink | relURL }}" integrity="{{ $index.Data.Integrity }}" crossorigin="anonymous" defer></script>
   {{ end -}}
 {{ end -}}
