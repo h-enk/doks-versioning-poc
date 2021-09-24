@@ -13,7 +13,7 @@ weight: 100
 toc: true
 ---
 
-{{< alert icon="🤖" text="You're viewing Doks v0.2." />}}
+{{< alert icon="🤖" text="You're viewing Doks v1.0." />}}
 
 ## Get started
 
