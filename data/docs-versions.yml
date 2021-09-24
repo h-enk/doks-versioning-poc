@@ -50,4 +50,5 @@
   baseurl: "/docs"
   description: "Current major release. Last update was v0.1.0."
   versions:
+    - v: "0.2"
     - v: "0.1"
