@@ -15,6 +15,8 @@ toc: true
 
 {{< alert icon="🤖" text="You're viewing Doks v0.1." />}}
 
+This is an update, which s/b be visible on the live website (master branch), but will not be visible when browsing v0.1 (branch deploy) — after the next release that is.
+
 ## Get started
 
 There are two main ways to get started with Doks:
