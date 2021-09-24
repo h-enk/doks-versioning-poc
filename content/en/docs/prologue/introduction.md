@@ -13,6 +13,8 @@ weight: 100
 toc: true
 ---
 
+{{< alert icon="🤖" text="You're viewing Doks v0.1." />}}
+
 ## Get started
 
 There are two main ways to get started with Doks:
