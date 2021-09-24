@@ -4,3 +4,5 @@
 {{ . }} {{ $p.RelPermalink -}}
 {{- end }}
 {{- end -}}
+
+/docs/0.1/  /docs/0.1/prologue/introduction/
