@@ -15,7 +15,7 @@ toc: true
 
 {{< alert icon="🤖" text="You're viewing Doks v0.1." />}}
 
-This is an update, which should only be visible with v0.2.0.
+This is an update, part of the next release, and already visible on the live website.
 
 ## Get started
 
