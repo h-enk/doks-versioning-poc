@@ -13,9 +13,7 @@ weight: 100
 toc: true
 ---
 
-{{< alert icon="🤖" text="You're viewing Doks v0.2." />}}
-
-This is an update, part of the next release, and already visible on the live website.
+{{< alert icon="🤖" text="You're viewing Doks v0.1." />}}
 
 ## Get started
 
