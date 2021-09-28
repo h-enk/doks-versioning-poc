@@ -15,6 +15,8 @@ toc: true
 
 {{< alert icon="🤖" text="You're viewing Doks v0.1." />}}
 
+This is an update, part of the next release, and already visible on the live website.
+
 ## Get started
 
 There are two main ways to get started with Doks:
