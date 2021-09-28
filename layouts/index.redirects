@@ -4,9 +4,9 @@
 {{- end }}
 {{- end -}}
 
-/docs/0.1/*           https://v0-1-0--doks-versioning-poc.netlify.app/docs/0.1/:splat  200
-
 /docs/0.1/prologue/   /docs/0.1/prologue/introduction/
 /docs/0.1/help/       /docs/0.1/help/how-to-update/
 /docs/0.1/            /docs/0.1/prologue/introduction/
 /docs/                /docs/0.1/prologue/introduction/
+
+/docs/0.1/*           https://v0-1-0--doks-versioning-poc.netlify.app/docs/0.1/:splat  200
